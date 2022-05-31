@@ -1,6 +1,6 @@
 import styles from './Card.module.css';
 
-export default function Card({card, handleChoice}) {
+export default function Card({card, handleChoice, flipped}) {
 
   const handleClick = () => {
     handleChoice(card);
@@ -8,8 +8,8 @@ export default function Card({card, handleChoice}) {
 
   return (
     <div className={styles.card}>
-        <div>
-            <img src={card.src} className={styles.cardFront} alt="card front" />
+        <div className={flipped ? styles.flipped : ""}>
+            <img src={card.src} className={styles.front} alt="card front" />
             <img src="/img/cover.png" 
                 onClick={handleClick}
                 className={styles.cardBack}

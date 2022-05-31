@@ -9,10 +9,11 @@
     border-radius: 5px;;
 }
 
-.card-front {
-
+.card .front {
+    position : absolute;
+    transform: rotateY(90deg);
 }
 
-.card-back {
-
+.flipped .front {
+    transform: rotateY(0deg);
 }
