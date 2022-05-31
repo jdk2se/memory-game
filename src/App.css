@@ -18,3 +18,10 @@ button:hover {
   color           : #fff;
   background-color: #c23866;
 }
+
+.grid {
+  display              : grid;
+  grid-gap             : 20px;
+  margin-top           : 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
